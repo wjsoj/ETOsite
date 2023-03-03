@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETO Unofficial Website</title>
+
+  <!-- scrollReveal v4.0.9 -->
+  <script src="assets/lib/scrollreveal.min.js"></script>
+
+  <!-- glide v3.6.0 -->
+  <link rel="stylesheet" href="assets/lib/glide.core.min.css">
+  <link rel="stylesheet" href="assets/lib/glide.theme.min.css">
+
+  <!-- main css -->
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header>
+    <!-- logo区 -->
+    <div class="logo">
+      <span id="logotext">ETO</span>
+    </div>
+
+    <!-- 导航 -->
+    <nav>
+      <a class="nav" href="#home">首页</a>
+      <a class="nav" href="#activity">近期活动</a>
+      <a class="nav" href="#aboutUs">关于我们</a>
+      <a class="nav" href="#joinUs">加入我们</a>
+    </nav>
+
+    <div class="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+
+  <!-- 图片轮播 -->
+  <div class="glide" id="home">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+
+        <div class="glide__slide">
+          <div class="slide-caption">
+            <svg class="text" id="svgtext" width="175" height="110">
+              <!-- 定义渐变颜色 -->
+              <defs>
+                <linearGradient id="geekColor" gradientTransform="rotate(90)">
+                  <stop offset="0%" stop-color="#F0FF00">
+                    <!-- 渐变动画 -->
+                    <animate attributeName="stop-color" values="#F0FF00;#58CFFB;#F0FF00" dur="15s" begin="3s"
+                      repeatCount="indefinite"></animate>
+                  </stop>
+
+                  <stop offset="100%" stop-color="#58CFFB">
+                    <animate attributeName="stop-color" values="#58CFFB;#F0FF00;#58CFFB" dur="10s" begin="3s"
+                      repeatCount="indefinite"></animate>
+                  </stop>
+                </linearGradient>
+              </defs>
+
+              <text class="logo_text" x="0" y="100">
+                ETO
+              </text>
+            </svg>
+            <!-- <h1>ETO</h1> -->
+            <h3>Earth-Trisolaris Organization</h3>
+            <h3>地球三体组织</h3>
+          </div>
+          <div class="backdrop"></div>
+          <img src="assets/img/banner.jpg" alt="1">
+        </div>
+
+        <div class="glide__slide">
+          <div class="slide-caption">
+            <h1>Our Slogan</h1>
+            <!-- <h3>消灭人类暴政，世界属于三体！</h3>
+                        <h3>Eliminate human tyranny,The world belongs to Trisolaris!</h3> -->
+            <h3>
+              <span id="typeText"
+                dataText='["消灭人类暴政，世界属于三体！", "Eliminate human tyranny,The world belongs to Trisolaris!"]''></span>
+              <span class="mark"></span>
+            </h3>
+            <button class="explore-btn" onclick="window.location.href='#aboutUs'">探索更多</button>
+          </div>
+          <div class="backdrop"></div>
+          <img src="assets/img/banner2.jpg" alt="2">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 切换按钮 -->
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> < </button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> > </button>
+    </div>
+
+    <!-- 控制圆点 -->
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+    </div>
+  </div>
+
+  <div class="content">
+    <section id="activity">
+      <h2 class="title">近期活动</h2>
+      <div class="activities">
+        <div class="activity">
+          <h3 class="activityTitle">智子工程</h3>
+          <p class="activityContent">为了保证主的绝对技术优势，智子工程通过破坏粒子对撞实验来锁死地球物理，并帮助主监视整个地球，通过与“科学边界”的活动相配合，已经取得较好的效果，目前越来越多的基础科学研究陷入停滞，大量物理学家已选择自杀</p>
+          <a href="https://santi.huijiwiki.com/wiki/智子工程" target="_blank" class="end">了解更多→</a>
+        </div>
+        <div class="activity">
+          <h3 class="activityTitle">神迹计划</h3>
+          <p class="activityContent">通过借助主的力量，我们得以制造如 使照片感光、在视网膜上显像、控制人类观察到的微波背景辐射、预知粒子对撞结果 等“神迹”，以此来在科学家中制造恐慌</p>
+          <a href="https://santi.huijiwiki.com/wiki/神迹计划" target="_blank" class="end">了解更多→</a>
+        </div>
+        <div class="activity">
+          <h3 class="activityTitle">染色计划</h3>
+          <p class="activityContent">人类对技术发展的担忧由来已久，染色计划通过利用和制造环境问题，激起人们对科学和现代工业的厌恶，力图为地球文明营造出反科学的社会环境，以此达到限制地球科技发展的目的</p>
+          <a href="https://santi.huijiwiki.com/wiki/染色计划" target="_blank" class="end">了解更多→</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutUs">
+      <h2 class="title">关于我们</h2>
+      <div id="gangLing"><h3 class="target">人类社会已经不可能依靠自身的力量解决自己的问题。也不可能凭借自身的力量抑制自己的疯狂；所以，应该请主降临世界，借助它的力量。对人类社会进行强制性的监督和改造。以创造一个全新的、光明完善的人类文明。</h3></div>
+      <div class="members">
+        <div class="member">
+          <div>
+            <img class="memberImage" src="assets/img/ywj.png" alt="">
+          </div>
+          <div class="memberName">叶文洁</div>
+          <div class="memberPosition">ETO统帅</div>
+          <div class="memberQuote"><i>"到这里来吧，我将帮助你们获得这个世界，我的文明已无力解决自己的问题，需要你们的力量来介入"</i></div>
+        </div>
+
+        <div class="member">
+          <div>
+            <img src="assets/img/syf.png" class="memberImage" alt="">
+          </div>
+          <div class="memberName">申玉菲</div>
+          <div class="memberPosition">ETO高层</br>科学边界负责人</div>
+          <div class="memberQuote"><i>"愿佛祖保佑我主脱离苦海"</i></div>
+        </div>
+
+        <div class="member">
+          <div>
+            <img class="memberImage" src="assets/img/ph.png" alt="">
+          </div>
+          <div class="memberName">潘寒</div>
+          <div class="memberPosition">ETO高层</br>"中华田园"创办人</div>
+          <div class="memberQuote"><i>"我们需要主降临世界，惩罚那些早就该受到惩罚的罪恶"</i></div>
+        </div>
+
+        <div class="member">
+          <div>
+            <img class="memberImage" src="assets/img/evans.png" alt="">
+          </div>
+          <div class="memberName">Mike Evans</div>
+          <div class="memberPosition">ETO创始人</br>第二红岸基地创建人</div>
+          <div class="memberQuote"><i>"我们不知道外星文明是什么样子,但知道人类"</i></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="scrollToTop">
+    <a href="#home">Λ</a>
+  </div>
+
+  <footer>
+    <div class="footcontent">
+      <div class="contact-us">
+        <p class="menu-title" id="joinUs">联系我们</p>
+        <p>地址：中国北京市海淀区双清路30号紫荆公寓</p>
+        <p>电话：010-85808981 </p>
+        <p>邮编：100010</p>
+        <p>电子邮箱：admin@eto.com</p>
+      </div>
+      <div class="logoimg">
+        <img src="assets/img/logo.jpg" alt="logo">
+      </div>
+    </div>
+    <div class="bottom">
+      <p class="anounce">
+        网站全部内容基于小说《三体》系列及其衍生创作，不代表个人观点
+      </br>
+      </br>
+        &copy; 1987-Present ETO 地球三体组织 <del>官网</del> 版权所有
+      </p>
+    </div>
+  </footer>
+
+  <!-- anime v3.2.1 -->
+  <script src="assets/lib/anime.min.js"></script>
+
+  <!-- glide v3.6.0 -->
+  <script src="assets/lib/glide.min.js"></script>
+
+  <!-- main js -->
+  <script src="assets/main.js"></script>
+  <script src="assets/lib/typer.js"></script>
+</body>
+
+</html>
