@@ -654,11 +654,11 @@ a.end:hover {
     }
 
     p.activityContent {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     h3.target {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
     h2.title {
@@ -670,7 +670,7 @@ a.end:hover {
     }
 
     .memberPosition {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .memberName {
