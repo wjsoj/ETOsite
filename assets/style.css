@@ -38,7 +38,6 @@ header {
     /* 栅格布局 */
     display: grid;
     padding: 0 40px;
-
     /* 两列，一列占三分之一，一列占三分之二 */
     grid-template-columns: 1fr 2fr;
     /* 垂直居中 */
@@ -58,7 +57,7 @@ header {
 /* 主标题动画 */
 .logo_text {
     font-family: "PingFang SC";
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 1000;
     fill: none;
     stroke: url("#geekColor");
@@ -189,7 +188,7 @@ header.sticky nav i {
     z-index: 70;
     color: var(--text-color-lightest);
     text-align: center;
-    max-width: 60vw;
+    max-width: 70vw;
 }
 
 /* 轮播标题默认不显示，在JS中用动画移入  */

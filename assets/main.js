@@ -40,7 +40,7 @@ glide.on(["mount.after", "run.after"], () => {
         // 透明度
         opacity: [0, 1],
         // 持续时间
-        duration: 600,
+        duration: 1000,
         easing: "linear",
         // 每个子元素相继延迟400毫秒，第一个延迟300毫秒
         delay: anime.stagger(400, { start: 300 }),
